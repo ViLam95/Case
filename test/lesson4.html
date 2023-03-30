@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ Hình Chữ Nhật</title>
+</head>
+<body>
+<canvas id="rectangle" width="200" height="100"></canvas>
+<script>
+    class Rectangle{
+        x
+        y
+        width
+        height
+        color
+        constructor(x,y,width,height,color) {
+            this.x = x
+            this.y = y
+            this.width = width
+            this.height = height
+            this.color = color
+        }
+    }
+    let rectang = new Rectangle(10, 10, 200, 100, "#000000");
+    let canvas = document.getElementById("rectangle");
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle= rectang.color
+        ctx.fillRect(rectang.x,rectang.y,rectang.width,rectang.height);
+</script>
+</body>
+</html>
